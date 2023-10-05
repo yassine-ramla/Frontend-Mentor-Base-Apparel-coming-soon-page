@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://your-solution-url.com)
-- Live Site URL: [live site URL](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/a-reasponsive-base-apparel-coming-soon-page-using-tailwindcss-OOuJAJ0YS7)
+- Live Site URL: [live site URL](https://yassine-ramla.github.io/Frontend-Mentor-Base-Apparel-coming-soon-page/)
 
 ## My process
 
