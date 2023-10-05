@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body
+    class="max-w-screen min-h-[100svh] font-mine bg-gradient-135 lg:bg-patter+ lg:bg-no-repeat lg:bg-60 lg:bg-left from-myGradientStart1 to-myGradientStop1 lg:grid lg:grid-cols-2 lg:grid-rows-2 lg:place-items-center">
+    <header class="w-full px-8 py-8 lg:px-44 lg:py-12">
+      <h1 class="hidden">Base Apparel</h1>
+      <img
+        src="./images/logo.svg"
+        alt="base Apparel logo"
+        class="w-1/3 lg:w-auto max-w-[200px]" />
+    </header>
+    <div
+      class="w-full lg:h-full aspect-[3/2] lg:aspect-auto bg-[url(../images/hero-mobile.jpg)] lg:bg-[url(../images/hero-desktop.jpg)] bg-cover bg-no-repeat lg:row-start-1 lg:row-end-3 lg:col-start-2"></div>
+    <main class="w-full">
+      <section
+        class="w-full flex flex-col gap-y-6 lg:gap-y-10 px-8 py-14 lg:px-36 xl:px-44">
+        <h2
+          class="text-4xl sm:text-6xl lg:text-7xl text-center lg:text-left text-myDarkGrayishRed font-semibold tracking-widest">
+          <span class="text-myDesaturatedRed font-light">WE'RE</span>
+          COMING SOON
+        </h2>
+        <p
+          class="text-center lg:text-left text-sm sm:text-lg text-myDesaturatedRed font-normal leading-snug lg:mr-2">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form action="." class="w-full flex relative mt-4">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="w-90 text-myDarkGrayishRed sm:text-xl font-semibold rounded-full pl-6 sm:pl-8 pr-24 lg:pr-32 py-3 sm:py-4 bg-transparent border border-myDesaturatedRed placeholder:text-myDesaturatedRed outline-none"
+            placeholder="Email Address"
+            oninvalid="
+              event.preventDefault();
+              this.classList.remove('border-border-myDesaturatedRed');
+              this.classList.add('border-mySoftRed');
+              document.getElementById('errorImg').classList.remove('hidden');
+              document.getElementById('errorMsg').classList.remove('hidden');
+            "
+            required />
+          <img
+            src="./images/icon-error.svg"
+            alt="error"
+            id="errorImg"
+            class="absolute right-20 lg:right-28 top-3 sm:top-5 hidden" />
+          <p
+            id="errorMsg"
+            class="hidden absolute left-4 lg:left-6 top-full text-sm text-mySoftRed font-semibold py-1 lg:py-2">
+            Please provide a valid email
+          </p>
+          <button
+            type="submit"
+            class="absolute h-101 rounded-full right-0 -top-[1px] bg-gradient-135 from-myGradientStart2 to-myGradientStop2 px-8 lg:px-11 shadow-2xl hover:shadow-xl hover:shadow-myDesaturatedRed shadow-myDesaturatedRed hover:from-myGradientStart3 hover:to-myGradientStop3">
+            <img src="./images/icon-arrow.svg" alt="submit" />
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
